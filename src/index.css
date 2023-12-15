@@ -1,3 +1,218 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@400;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #827974;
+  font-family: "Vollkorn SC", serif;
+}
+
+/* Carousel */
+/* CAROUSEL */
+[class^="number-slide"],
+[class*=" number-slide"] {
+  background: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  color: #fff;
+  font-weight: 500;
+  height: 300px;
+  max-height: 100vh;
+}
+
+.navigation-wrapper {
+  position: relative;
+}
+
+.dots {
+  display: flex;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.dot {
+  border: none;
+  width: 10px;
+  height: 10px;
+  background: #c5c5c5;
+  border-radius: 50%;
+  margin: 0 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.dot:focus {
+  outline: none;
+}
+
+.dot.active {
+  background: #000;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  fill: #241f1e;
+  cursor: pointer;
+}
+
+.arrow--left {
+  left: 5px;
+}
+
+.arrow--right {
+  left: auto;
+  right: 5px;
+}
+
+/* FORM FOR CONTACT */
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__submit {
+  background-color: #241f1e;
+  border: 2px solid #241f1e;
+  border-radius: 90px;
+  color: #fff;
+  font-weight: 700;
+  width: 100%;
+  max-width: 250px;
+  padding: 12px 24px;
+  font-size: 20px;
+  transition: all 350ms ease;
+}
+
+.form__submit:hover {
+  border-color: #fff;
+  background-color: transparent;
+}
+
+.form__submit:active {
+  border-color: #241f1e;
+  color: #241f1e;
+}
+
+.form__item--label {
+  color: #241f1e;
+}
+
+input,
+textarea {
+  width: 100%;
+  background-color: #827974;
+  color: #fff;
+  outline: none;
+  border: none;
+  /* border-bottom: 2px solid #c0c4cc; */
+  border-bottom: 2px solid #fff;
+  height: 40px;
+  transition: all 350ms ease;
+}
+
+input:hover,
+textarea:hover {
+  border-color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #241f1e;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  margin-top: 8px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* Hamburger menu for phone */
+#nav-mobile {
+  display: none;
+}
+
+#nav-mobile i {
+  color: #fff;
+}
+
+/* PHONES AND SMALL DEVICES */
+@media screen and (max-width: 800px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 66px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: #863c19;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.2);
+    padding: 40px 0 0 20px;
+    transition: 300ms ease-in-out;
+  }
+
+  .open {
+    right: 0px;
+  }
+
+  nav ul li {
+    margin-bottom: 25px;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  #nav-mobile {
+    display: block;
+  }
+
+  #nav-mobile i {
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .active {
+    background-color: #fff;
+    color: #863c19;
+  }
+
+  .mobile-disable {
+    display: none;
+  }
+}
+
+/* small devices */
+@media screen and (max-width: 550px) {
+  nav ul {
+    top: 106px;
+  }
+
+  nav {
+    padding: 1.25rem;
+  }
+}

@@ -1,13 +1,22 @@
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+import Navbar from "./components/Navbar"
+import Header from "./components/Header"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
+import About from "./components/About";
+import Carousel from "./components/Carousel";
 
 function App() {
   return (
-    <div className="App">
-      <div className="flex items-center flex-col">
-        <h1 className="text-5xl mb-4">Coming soon...</h1>
-        <h2 className="text-3xl">-Moth Medina</h2>
-      </div>
-    </div>
+    <Router>
+      <Navbar />
+      <Header />
+      <About />
+      <Carousel />
+      <Contact />
+      <Footer />
+    </Router>
   );
 }
 
