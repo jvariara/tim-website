@@ -9,10 +9,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_mhfhkre",
-        "template_hbvkwea",
+        process.env.REACT_APP_EMAIL_SERVICE,
+        process.env.REACT_APP_EMAIL_TEMPLATE,
         form.current,
-        "CF1fNaHARmBBAkLpd"
+        process.env.REACT_APP_EMAIL_USER
       )
       .then(
         (result) => {
