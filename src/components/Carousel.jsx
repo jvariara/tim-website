@@ -83,7 +83,7 @@ const Carousel = () => {
             Gallery
           </h6>
           <h1 className="text-4xl md:text-5xl my-4 font-bold text-white text-center">
-            Photos from Moth's performances
+            Photos of Moth and his performances
           </h1>
         </div>
         <div ref={sliderRef} className="keen-slider">

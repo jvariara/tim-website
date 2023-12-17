@@ -7,7 +7,7 @@ import Resume from "../assets/Resume.pdf";
 
 const Header = () => {
   return (
-    <header className="h-[calc(100vh-66px)] w-full flex">
+    <header className="md:h-[calc(100vh-66px)] h-[calc(100vh-106px)] w-full flex top-[106px] md:top-0 relative">
       <div className="max-w-[1250px] m-auto flex flex-col md:flex-row">
         <div className="container mx-auto md:flex items-center xs:flex-col">
           <div className="flex-initial m-4 md:w-2/4 flex md:flex-col justify-between md:justify-normal">
