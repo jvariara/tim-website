@@ -40,7 +40,7 @@ const Hero = () => {
           <img
             src={Tim2}
             alt="Tim"
-            className="h-[500px] md:h-[800px] object-contain"
+            className="h-[400px] md:h-[800px] object-contain"
           />
         </div>
       </div>
