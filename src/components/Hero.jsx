@@ -6,7 +6,7 @@ import { AiFillInstagram } from "react-icons/ai";
 
 const Hero = () => {
   return (
-    <header className="md:h-[calc(100vh-72px)] h-[calc(100vh-80px)] w-full flex">
+    <header className="md:h-[calc(100vh-72px)] h-[calc(100vh-80px)] top-8 md:top-0 relative w-full flex">
       <div className="max-w-[1250px] m-auto flex flex-col md:flex-row">
         <div className="container mx-auto md:flex items-center xs:flex-col">
           <div className="flex-initial m-4 md:w-2/4 flex md:flex-col justify-between md:justify-normal">
