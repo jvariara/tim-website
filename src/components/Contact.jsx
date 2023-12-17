@@ -33,9 +33,6 @@ const Contact = () => {
           <h6 className="text-[#241f1e] font-semibold text-4xl items-center">
             Contact Me
           </h6>
-          <h1 className="text-4xl md:text-5xl my-4 font-bold text-white text-center">
-            Lets get to talking!
-          </h1>
         </div>
         <form ref={form} id="contact__form" onSubmit={sendEmail}>
           <div className="form__item">

@@ -5,12 +5,11 @@ import Outrage1 from "../assets/Outrage_Promo_1.jpg";
 import Outrage2 from "../assets/Outrage_Promo_2.jpg";
 import Twelfth1 from "../assets/Twelfth_Night_Promo_1.jpg";
 import Twelfth2 from "../assets/Twelfth_Night_Promo_2.jpg";
-import Tim1 from "../assets/Tim1.jpeg"
 
-const Carousel = () => {
+const Gallery = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
-  const pictures = [Outrage1, Outrage2, Twelfth1, Twelfth2, Tim1];
+  const pictures = [Outrage1, Outrage2, Twelfth1, Twelfth2];
   const [sliderRef, instanceRef] = useKeenSlider(
     {
       initial: 0,
@@ -77,14 +76,11 @@ const Carousel = () => {
 
   return (
     <section>
-      <div className="py-[80px] w-full max-w-[1250px] m-auto px-4 xs:px-6 navigation-wrapper">
+      <div className="py-[80px] max-w-[1250px] m-auto px-4 xs:px-6 navigation-wrapper">
         <div className="flex flex-col justify-center items-center">
           <h6 className="text-[#241f1e] font-semibold text-4xl items-center my-4">
             Gallery
           </h6>
-          <h1 className="text-4xl md:text-5xl my-4 font-bold text-white text-center">
-            Photos of Moth and his performances
-          </h1>
         </div>
         <div ref={sliderRef} className="keen-slider">
           {pictures.map((picture, idx) => (
@@ -122,4 +118,4 @@ const Carousel = () => {
   );
 };
 
-export default Carousel;
+export default Gallery;

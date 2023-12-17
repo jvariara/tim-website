@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center py-[4rem]">
         <a href="#">
           <img
-            className="w-[50px] h-[50px] hover:scale-125 duration-300"
+            className="w-[50px] h-[50px] hover:scale-125 duration-300 hidden"
             src=""
             alt="Logo"
           />

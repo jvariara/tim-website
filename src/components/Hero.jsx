@@ -1,13 +1,12 @@
-import React from "react";
-import Tim1 from "../assets/Tim2.jpeg";
+import React, { useState } from "react";
+import Tim1 from "../assets/Tim1.jpeg";
+import Tim2 from "../assets/Tim2.jpeg";
 import { MdEmail } from "react-icons/md";
 import { AiFillInstagram } from "react-icons/ai";
-import { FaFilePdf } from "react-icons/fa6";
-import Resume from "../assets/Resume.pdf";
 
-const Header = () => {
+const Hero = () => {
   return (
-    <header className="md:h-[calc(100vh-66px)] h-[calc(100vh-106px)] w-full flex top-[106px] md:top-0 relative">
+    <header className="md:h-[calc(100vh-72px)] h-[calc(100vh-80px)] w-full flex">
       <div className="max-w-[1250px] m-auto flex flex-col md:flex-row">
         <div className="container mx-auto md:flex items-center xs:flex-col">
           <div className="flex-initial m-4 md:w-2/4 flex md:flex-col justify-between md:justify-normal">
@@ -39,7 +38,7 @@ const Header = () => {
         </div>
         <div>
           <img
-            src={Tim1}
+            src={Tim2}
             alt="Tim"
             className="h-[500px] md:h-[800px] object-contain"
           />
@@ -49,4 +48,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Hero;
