@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Resume from "../assets/Resume.pdf";
+import Logo from "../assets/Logo.svg";
 
 const Navbar = () => {
   const [clicked, setClicked] = useState(false);
@@ -19,11 +20,13 @@ const Navbar = () => {
     <nav className="bg-[#241f1e] shadow-md w-full top-0 left-0 z-[100] px-8 py-4 fixed">
       <div className="md: flex items-center justify-between py-2 max-w-[1250px] m-auto">
         <div className="font-bold text-3xl cursor-pointer flex items-center text-white">
-          <img
-            className="w-[50px] h-[50px] hover:scale-125 duration-300 hidden"
-            src=""
-            alt="Logo"
-          />
+          <a href="#">
+            <img
+              className="w-[50px] h-[50px] hover:scale-125 duration-300 z-50 invert"
+              src={Logo}
+              alt="Logo"
+            />
+          </a>
         </div>
 
         <ul

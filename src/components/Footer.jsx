@@ -1,5 +1,6 @@
 import React from 'react'
 import Resume from "../assets/Resume.pdf"
+import Logo from "../assets/Logo.svg";
 
 const Footer = () => {
   const list = [
@@ -13,8 +14,8 @@ const Footer = () => {
       <div className="flex flex-col items-center justify-center py-[4rem]">
         <a href="#">
           <img
-            className="w-[50px] h-[50px] hover:scale-125 duration-300 hidden"
-            src=""
+            className="w-[50px] h-[50px] hover:scale-125 duration-300 invert"
+            src={Logo}
             alt="Logo"
           />
         </a>
