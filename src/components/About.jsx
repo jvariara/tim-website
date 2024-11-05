@@ -9,9 +9,9 @@ const About = () => {
             About Me
           </h6>
           <p className="text-2xl md:text-3xl my-4 text-[#241f1e] text-center">
-            Moth Medina was born in Poughkeepsie, New York and eventually would
-            travel north to attend the University at Buffalo theater &
-            performance program, where he will graduate in May of 2024.
+            Moth Medina was born in Poughkeepsie, New York and attended the University at Buffalo Theatre & Performance
+            program, where he graduated in May of 2024 with a BFA in Theatre & Performance and is currently studying for his MFA in Theatre & Performance at
+            Oklahoma City University, where he will graduate in 2026.
           </p>
         </div>
       </div>
